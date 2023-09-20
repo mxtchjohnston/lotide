@@ -17,13 +17,27 @@ const eqObjects = (obj1, obj2) => {
   return true;
 };
 
+exports.eqObjects = eqObjects;
+
 const shirtObject = { color: "red", size: "medium" };
 const anotherShirtObject = { size: "medium", color: "red" };
-eqObjects(shirtObject , anotherShirtObject); // => true
 
 //We need to use that return value in combination with assertEquals to test if the function is working correctly.
 assertEqual(eqObjects(shirtObject , anotherShirtObject), true);
 
 const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
-eqObjects(shirtObject , longSleeveShirtObject); // => false
+
 assertEqual(eqObjects(shirtObject , longSleeveShirtObject), false);
+
+let nested1 = {
+  name: "john",
+  wardrobe: shirtObject
+}
+
+let nested2 = {
+  name: "john",
+  wardrobe: longSleeveShirtObject,
+  age: 87
+}
+assertEqual(eqObjects(nested1, nested1), true);
+assertEqual(eqObjects(nested1, nested2), false);

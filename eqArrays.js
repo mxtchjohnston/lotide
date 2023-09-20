@@ -1,4 +1,4 @@
-const { eqObjects} = require("./eqObjects.js");
+const { eqObjects } = require("./eqObjects.js");
 
 
 const isEqual = function(value1, value2) {

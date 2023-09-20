@@ -14,12 +14,7 @@ const isEqual = function(value1, value2) {
         return false;
       }
     }
-
     return true;
-  } else if (typeof value1 === 'object' && typeof value2 === 'object') {
-
-    return eqObjects(value1, value2);
-
   } else {
     // Handle scalar values by direct comparison
     return value1 === value2;

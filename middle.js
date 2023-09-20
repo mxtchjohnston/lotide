@@ -14,7 +14,7 @@ const middle = (array) => {
   // } else if (array.lenth % 2 === 0) {
   //   return [array[middle - 2], array[middle - 1]];
   // } else {
-  //   return [array[middle]]; 
+  //   return [array[middle]];
   // }
   const middle = Math.floor(array.length / 2);
   if (array.length < 3) {
@@ -24,7 +24,7 @@ const middle = (array) => {
   } else {
     return [array[middle - 1], array[middle]];
   }
-}
+};
 
 assertArraysEqual(middle([1,2]), []);
 assertArraysEqual(middle([1,2,3,4,5]), [3]);

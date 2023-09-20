@@ -32,12 +32,12 @@ const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "lon
 let nested1 = {
   name: "john",
   wardrobe: shirtObject
-}
+};
 
 let nested2 = {
   name: "john",
   wardrobe: longSleeveShirtObject,
   age: 87
-}
+};
 // assertEqual(eqObjects(nested1, nested1), true);
 // assertEqual(eqObjects(nested1, nested2), false);

@@ -1,17 +1,17 @@
 const { assertEqual } = require('./assertEqual.js');
 
 const findKeyByValue = (object, value) => {
-  for (prop in object) {
+  for (let prop in object) {
     if (object[prop] === value) {
       return prop;
     }
   }
   return undefined;
-}
+};
 
 
 
-const bestTVShowsByGenre = { 
+const bestTVShowsByGenre = {
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama:  "The Wire"

@@ -6,7 +6,7 @@ const countLetters = (string) => {
   let countObject = {};
   
   arrChar.forEach((element, index) => {
-    if (countObject.hasOwnProperty(element)) {
+    if (countObject.hasOwnProperty(element)) { //choosing to ignore this lint
       countObject[element].push(index);
     } else {
       countObject[element] = [index];
@@ -15,7 +15,7 @@ const countLetters = (string) => {
 
   //console.log(countObject);
   return countObject;
-}
+};
 
 const ans = countLetters("Welcome to the jungle");
 

@@ -14,7 +14,7 @@ const countOnly = (allItems, itemsToCount) => {
   }
 
   return countedObject;
-}
+};
 
 const firstNames = [
   "Karl",

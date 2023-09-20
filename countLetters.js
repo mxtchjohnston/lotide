@@ -13,7 +13,7 @@ const countLetters = (string) => {
   }
   //console.log(countObject);
   return countObject;
-}
+};
 
 let counted = countLetters("the quick brown fox sleeps zzzzzzz");
 

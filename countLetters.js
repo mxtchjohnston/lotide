@@ -1,15 +1,19 @@
 const { assertEqual } = require('./assertEqual.js');
 
 const countLetters = (string) => {
-  let arrChar = string.split("");
+
   let countObject = {};
   //for of loops work with strings
-  for (let char of arrChar) {
-    if (countObject.hasOwnProperty(char)) {
-      countObject[char] += 1;
-    } else {
-      countObject[char] = 1;
+  for (let char of string) {
+    if (char === " ") {
+      continue;
     }
+
+    if (!countObject[char]) {
+      countObject[char] = 0;
+    }
+
+    countObject[char]++;
   }
   //console.log(countObject);
   return countObject;

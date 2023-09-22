@@ -11,10 +11,10 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual([1, 2], [1, 2]);
-assertEqual([[1, 2], [1, 2]], [[1, 2], [1, 2]]);
-assertEqual([[1, 2], [3, 4]], [[1, 2], [3, 5]]);
+// assertEqual("Lighthouse Labs", "Bootcamp");
+// assertEqual(1, 1);
+// assertEqual([1, 2], [1, 2]);
+// assertEqual([[1, 2], [1, 2]], [[1, 2], [1, 2]]);
+// assertEqual([[1, 2], [3, 4]], [[1, 2], [3, 5]]);
 
 exports.assertEqual = assertEqual;

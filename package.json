@@ -1,16 +1,21 @@
 {
   "name": "lotide",
   "version": "1.0.0",
-  "description": "lodash clone",
-  "main": "assertArraysEqual.js",
+  "description": "Lodash clone for learning purposes",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
     "test": "mocha"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["Lighthouse", "Leanring"],
+  "author": "@mxtchjohnston",
+  "homepage": "https://github.com/mxtchjohnston/lotide",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mxtchjohnston/lotide.git"
+  },
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.3.8",

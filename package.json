@@ -10,7 +10,7 @@
     "test": "mocha"
   },
   "keywords": ["Lighthouse", "Leanring"],
-  "author": "@mxtchjohnston",
+  "author": "mxtchjohnston",
   "homepage": "https://github.com/mxtchjohnston/lotide",
   "repository": {
     "type": "git",

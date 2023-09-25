@@ -44,12 +44,4 @@ const isEqual = (val1, val2) => {
   }
 }
 
-exports.isEqual = isEqual;
-
-const obj = {a: 1, b: true, c: ['hello', 'world']};
-const obj2 = {c: ['hello','world'], a: 1, b: true};
-
-const combined = {first: obj, second: obj2};
-
-// console.log(isEqual_(obj, obj2));
-// console.log(isEqual_(combined, combined));
+module.exports = isEqual;

@@ -6,7 +6,7 @@ const map = (array, func) => {
   }
 
   return result;
-}
+};
 
 const test = [1, 2, 3, 4, 5];
 

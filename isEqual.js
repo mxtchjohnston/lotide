@@ -1,17 +1,17 @@
 const eqVal = (val1, val2) => val1 === val2;
 
 const eqArray = (val1, val2) => {
-    if (val1.length !== val2.length) {
+  if (val1.length !== val2.length) {
+    return false;
+  }
+
+  for (let i = 0; i < val1.length; i++) {
+    //recurses to check multidimensional values
+    if (!isEqual(val1[i], val2[i])) {
       return false;
     }
-
-    for (let i = 0; i < val1.length; i++) {
-      //recurses to check multidimensional values
-      if (!isEqual(val1[i], val2[i])) {
-        return false;
-      }
-    }
-    return true;
+  }
+  return true;
 };
 
 const eqObjects = (obj1, obj2) => {
@@ -33,7 +33,7 @@ const eqObjects = (obj1, obj2) => {
 
 
 const isEqual = (val1, val2) => {
-  if (typeof val1 === 'object' && typeof val2 === 'object'){
+  if (typeof val1 === 'object' && typeof val2 === 'object') {
     if (Array.isArray(val1) && Array.isArray(val2)) {
       return eqArray(val1, val2);
     } else {
@@ -42,6 +42,6 @@ const isEqual = (val1, val2) => {
   } else {
     return eqVal(val1, val2);
   }
-}
+};
 
 module.exports = isEqual;

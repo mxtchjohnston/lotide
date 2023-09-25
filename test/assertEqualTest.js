@@ -9,10 +9,6 @@ assertEqual([1, 2], [1, 2]);
 assertEqual([[1, 2], [1, 2]], [[1, 2], [1, 2]]);
 assertEqual([[1, 2], [3, 4]], [[1, 2], [3, 4]]);
 
-console.log('---head---');
-assertEqual(head([1,2,3]), 1);
-assertEqual(head([true, false]), true);
-
 console.log('---tail---');
 assertEqual(tail([1,2,3]), [2, 3]);
 assertEqual(tail([true, false]), [false]);

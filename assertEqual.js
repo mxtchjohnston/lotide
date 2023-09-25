@@ -1,4 +1,4 @@
-const { isEqual } = require('./isEqual.js');
+const isEqual = require('./isEqual.js');
 const inspect = require('util').inspect;
 
 const assertEqual = function(actual, expected) {
